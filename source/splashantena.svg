@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #d07227;
+                stroke: #e68637;
+                stroke-miterlimit: 10;
+
+            }
+
+            .cls-2 {
+                fill: #fff;
+            }
+
+            .cls-2,
+            .cls-3 {
+                stroke: #fff;
+                stroke-miterlimit: 10;
+            }
+
+            .cls-3 {
+                fill: none;
+                stroke-width: 3px;
+            }
+        </style>
+    </defs>
+    <g id="Capa_2" data-name="Capa 2">
+        <g id="Capa_1-2" data-name="Capa 1">
+            <rect id="Rectangulo_antena" class="cls-1" width="61" height="61" rx="8.52" />
+            <g id="Antena">
+                <polygon class="cls-2" points="34.13 45 28.88 45 30.63 29.87 32.81 29.87 34.13 45" />
+                <path class="cls-3" d="M41,19.45a10.73,10.73,0,0,1,.4,13.67" />
+                <path class="cls-3" d="M44.5,16.5A14.9,14.9,0,0,1,45,36.19" />
+                <path class="cls-3" d="M37.5,22.5a6.08,6.08,0,0,1,.09,7.73" />
+                <path class="cls-3" d="M22.68,33.47a10.76,10.76,0,0,1,.79-13.66" />
+                <path class="cls-3" d="M18.91,36.1a14.9,14.9,0,0,1,1.24-19.66" />
+                <path class="cls-3" d="M26.41,30.73A6.07,6.07,0,0,1,27,23" />
+                <circle class="cls-2" cx="32" cy="27" r="3" />
+            </g>
+        </g>
+    </g>
+</svg>

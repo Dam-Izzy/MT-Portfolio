@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-3 {
+                fill: #2c4a9a;          
+            }
+
+            .cls-1 {
+                stroke: #4b6fd2;                
+                stroke-miterlimit: 10;
+            }
+
+            .cls-2 {
+                fill: #fff;
+            }
+
+            .cls-4 {
+                fill: #f7f8f9;
+            }
+        </style>
+    </defs>
+    <g id="Capa_2" data-name="Capa 2">
+        <g id="Capa_1-2" data-name="Capa 1">
+            <rect id="Rectangulo_radio" class="cls-1" x="0.5" y="0.5" width="61" height="61" rx="8.52" />
+            <g id="Radio">
+                <rect class="cls-2" x="22.2" y="21.82" width="19.3" height="29.68" rx="3" />
+                <path class="cls-2"
+                    d="M38.5,22.32a2.5,2.5,0,0,1,2.5,2.5V48.5A2.5,2.5,0,0,1,38.5,51H25.2a2.5,2.5,0,0,1-2.5-2.5V24.82a2.5,2.5,0,0,1,2.5-2.5H38.5m0-1H25.2a3.5,3.5,0,0,0-3.5,3.5V48.5A3.5,3.5,0,0,0,25.2,52H38.5A3.5,3.5,0,0,0,42,48.5V24.82a3.5,3.5,0,0,0-3.5-3.5Z" />
+                <rect class="cls-3" x="25" y="27.04" width="14.4" height="4.22" />
+                <path class="cls-3" d="M38.9,27.54v3.22H25.5V27.54H38.9m1-1H24.5v5.22H39.9V26.54Z" />
+                <rect class="cls-3" x="24.3" y="33.57" width="2.5" height="0.96" />
+                <polygon class="cls-3" points="27.3 33.07 23.8 33.07 23.8 35.03 27.3 35.03 27.3 33.07 27.3 33.07" />
+                <rect class="cls-3" x="28.5" y="33.57" width="2.5" height="0.96" />
+                <polygon class="cls-3" points="31.5 33.07 28 33.07 28 35.03 31.5 35.03 31.5 33.07 31.5 33.07" />
+                <rect class="cls-3" x="32.7" y="33.57" width="2.5" height="0.96" />
+                <polygon class="cls-3" points="35.7 33.07 32.2 33.07 32.2 35.03 35.7 35.03 35.7 33.07 35.7 33.07" />
+                <rect class="cls-3" x="36.9" y="33.57" width="2.5" height="0.96" />
+                <polygon class="cls-3" points="39.9 33.07 36.4 33.07 36.4 35.03 39.9 35.03 39.9 33.07 39.9 33.07" />
+                <polygon class="cls-2" points="29.2 20.82 29.2 19.91 33.07 19.86 33.09 20.82 29.2 20.82" />
+                <path class="cls-4" d="M33.07,19.36H29.25a.55.55,0,0,0-.55.55v1.41h4.9V19.89a.53.53,0,0,0-.53-.53Z" />
+                <polygon class="cls-2" points="34.8 20.82 34.8 20.51 38.65 20.51 38.67 20.82 34.8 20.82" />
+                <path class="cls-4" d="M38.65,20H34.72a.42.42,0,0,0-.42.43v.88h4.9v-.76a.55.55,0,0,0-.55-.55Z" />
+                <path class="cls-2" d="M22.2,22.78V7.5a2,2,0,0,1,2-2h.52A2.08,2.08,0,0,1,26.8,7.58v15.2Z" />
+                <path class="cls-4"
+                    d="M24.72,6A1.58,1.58,0,0,1,26.3,7.58v14.7H22.7V7.5A1.5,1.5,0,0,1,24.2,6h.52m0-1H24.2a2.5,2.5,0,0,0-2.5,2.5V23.28h5.6V7.58A2.59,2.59,0,0,0,24.72,5Z" />
+                <rect class="cls-2" x="21" y="24.58" width="0.7" height="11.1" />
+                <polygon class="cls-4" points="21.7 24.58 21 24.58 21 35.68 21.7 35.68 21.7 24.58 21.7 24.58" />
+            </g>
+        </g>
+    </g>
+</svg>

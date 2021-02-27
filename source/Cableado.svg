@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Cableado" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st1{fill:#616161;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st2{fill:#616161;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<rect x="20.17" y="43.8" class="st0" width="6.09" height="5.94"/>
+<path class="st0" d="M30.58,46.44H16.78c-0.47,0-0.86-0.39-0.86-0.86l0,0c0-0.47,0.39-0.86,0.86-0.86h13.79
+	c0.47,0,0.86,0.39,0.86,0.86l0,0C31.44,46.05,31.05,46.44,30.58,46.44z"/>
+<path class="st0" d="M29.3,49.08H18.42c-0.47,0-0.86-0.39-0.86-0.86v0c0-0.47,0.39-0.86,0.86-0.86H29.3c0.47,0,0.86,0.39,0.86,0.86
+	v0C30.16,48.69,29.77,49.08,29.3,49.08z"/>
+<path class="st0" d="M33.72,43.8H13.56c-1.39,0-2.52-1.13-2.52-2.52V13.14c0-1.39,1.13-2.52,2.52-2.52h20.16
+	c1.39,0,2.52,1.13,2.52,2.52v28.14C36.24,42.67,35.11,43.8,33.72,43.8z"/>
+<rect x="22.4" y="16.85" class="st1" width="3.99" height="14.95"/>
+<rect x="18.97" y="8.81" class="st1" width="10.45" height="9.43"/>
+<line class="st2" x1="35.4" y1="43.15" x2="37.14" y2="45.58"/>
+<rect x="37.14" y="44.36" class="st0" width="0.54" height="3.53"/>
+</svg>
