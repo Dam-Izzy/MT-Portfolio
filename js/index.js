@@ -11,4 +11,5 @@ window.onload = () => {
     ease: "Power3.easeInOut",
   });
   const cursor = new Cursor(document.querySelector(".cursor"));
+
 };

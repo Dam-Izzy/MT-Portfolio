@@ -101,8 +101,74 @@ barba.hooks.before((data)=>{
 
 function contentAnimation() {
 
-  let tl = gsap.timeline({delay: 0.5});
+  let tl = gsap.timeline({delay: 0.5, paused:true});
 
+
+  dots = $('.dot'),
+  loader = $('#loader'),
+  tlLoader = new TimelineMax({
+    repeat: 2,
+    onComplete: loadContent
+  });
+
+  tlLoader
+  .staggerFromTo(dots, 0.5, {
+      y: 0,
+      autoAlpha: 0
+    }, {
+      y: 20,
+      autoAlpha: 1,
+      ease: Back.easeInOut
+    },
+    0.1
+  )
+  .fromTo(loader, 0.3, {
+      autoAlpha: 1,
+      scale: 1
+    }, {
+      autoAlpha: 0,
+      ease: Power0.easeNone
+    },
+    1
+  );
+
+function loadContent() {
+  var tlLoaderOut = new TimelineLite({
+    onComplete: contentIn
+  });
+  tlLoaderOut
+    .set(dots, {
+      backgroundColor: "#4a4a4a"
+    })
+    .to(loader, 0.1, {
+      autoAlpha: 1,
+      ease: Power0.easeNone
+    })
+    .staggerFromTo(dots, 0.3, {
+        y: 0,
+        autoAlpha: 0
+      }, {
+        y: 20,
+        autoAlpha: 1,
+        ease: Back.easeInOut
+      },
+      0.1
+    )
+    .to(loader, 0.3, {
+      scale: 1,
+      y: -100,
+      autoAlpha: 0,
+      ease: Back.easeIn
+    })
+
+}
+function contentIn() {
+  tl.play();
+}
+
+
+
+  
   tl.from('.left', {
     duration: 1.5,
     translateY: 50,
@@ -496,4 +562,45 @@ var Time = 7000; //tiempo en milisegundos que espera para se efectuarse la funci
 contactUsLauncher.autoPop('Hola, ¿Dinos en qué te podemos ayudar?', 10000);
 
 const cursor = document.querySelector('.cursor')
-//#endregion
+
+
+document.querySelectorAll('.button').forEach(button => {
+
+  let div = document.createElement('div'),
+      letters = button.textContent.trim().split('');
+
+  function elements(letter, index, array) {
+
+      let element = document.createElement('span'),
+          part = (index >= array.length / 2) ? -1 : 1,
+          position = (index >= array.length / 2) ? array.length / 2 - index + (array.length / 2 - 1) : index,
+          move = position / (array.length / 2),
+          rotate = 1 - move;
+
+      element.innerHTML = !letter.trim() ? '&nbsp;' : letter;
+      element.style.setProperty('--move', move);
+      element.style.setProperty('--rotate', rotate);
+      element.style.setProperty('--part', part);
+
+      div.appendChild(element);
+
+  }
+
+  letters.forEach(elements);
+
+  button.innerHTML = div.outerHTML;
+
+  button.addEventListener('mouseenter', e => {
+      if(!button.classList.contains('out')) {
+          button.classList.add('in');
+      }
+  });
+
+  button.addEventListener('mouseleave', e => {
+      if(button.classList.contains('in')) {
+          button.classList.add('out');
+          setTimeout(() => button.classList.remove('in', 'out'), 950);
+      }
+  });
+
+});

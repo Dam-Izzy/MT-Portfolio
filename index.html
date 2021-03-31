@@ -7,7 +7,6 @@
     <title>MTNetworks</title>
     <!-- archivo principal de estilos -->
     <link rel="stylesheet" href="css/main.css">
-
     <!-- fin main -->
     <link rel="stylesheet" href="css/foundation.min.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
@@ -16,10 +15,16 @@
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    
+    <link rel="stylesheet" href="css/base.css">
 </head>
 
 <body data-barba="wrapper"  id="main-scrollbar">
+    <div id="loader">
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+	</div>
     <ul class="transition">
         <li class="color1">
             <img src="source/splashradio.svg" alt="radio">
@@ -69,18 +74,18 @@
                             style="max-width: 100px; position: absolute; top: 1em;"></a>
                     <nav class="main-navigation">
                         <ul>
-                            <li><a class="btn-nav" href="Servicios.html">Servicios</a></li>
-                            <li><a class="btn-nav" href="Contacto.html">Contacto</a></li>
-                            <li><a class="btn-nav" href="#">Tienda</a></li>
+                            <li><a class="btn-nav btn" href="Servicios.html">Servicios</a></li>                                    
+                            <li><a class="btn-nav btn" href="Contacto.html">Contacto</a></li>
+                            <li><a class="btn-nav btn" href="#">Tienda</a></li>
                         </ul>
                     </nav>
                 </header>
                 <div class="social-header">
                     <ul>
-                        <li><a href="https://www.facebook.com/mttechmixteca"><img src="source/cuadro1.png"
+                        <li><a class="btn" href="https://www.facebook.com/mttechmixteca"><img src="source/cuadro1.png"
                                     alt="Facebook" style="max-width: 30px;"></a></li>
-                        <li><a href="#"><img src="source/cuadro2.png" alt="tweater" style="max-width: 30px;"></a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=2431109435"><img src="source/cuadro3.png"
+                        <li><a class="btn" href="#"><img src="source/cuadro2.png" alt="tweater" style="max-width: 30px;"></a></li>
+                        <li><a class="btn" href="https://api.whatsapp.com/send?phone=2431109435"><img src="source/cuadro3.png"
                                     alt="WhatsApp" style="max-width: 30px;"></a></li>
                     </ul>
                 </div>
@@ -94,35 +99,35 @@
                             <div class="hero-inner-col left"></div>
                             <div class="hero-inner-col right">
                                 <div  class="hero-inner-title">
-                                    <h1 class="hero-slogan enlaces">MTNetworks</h1>
+                                    <h1 class="hero-slogan enlaces" data-scroll data-scroll-speed="3"><span>MTNetworks</span></h1>
                                 </div>
-                                <div  class="hero-inner-links" data-scroll-section>
-                                    <div data-scroll data-scroll-speed="1" data-video-src="websites" class="hero-inner-link-item  ">
+                                <div  class="hero-inner-links" >
+                                    <div  data-video-src="websites" class="hero-inner-link-item  ">
                                         <div class="hero-inner-link-item-padding"></div>
                                         <a  class="Enlace-a "
-                                            href="/"> <span  class="Enlace-span ">Redes</span></a>
+                                            href="/"> <span data-quote="Redes" class="Enlace-span ">Redes</span></a>
                                     </div>
-                                    <div data-scroll data-scroll-speed="2" data-video-src="apps" class="hero-inner-link-item">
+                                    <div data-video-src="apps" class="hero-inner-link-item">
                                         <div class="hero-inner-link-item-padding"></div>
                                         <a  class="Enlace-a"
-                                            href="/"> <span class="Enlace-span">Internet</span></a>
+                                            href="/"> <span data-quote="Internet" class="Enlace-span">Internet</span></a>
                                     </div>
-                                    <div data-scroll data-scroll-speed="3" class="hero-inner-link-item" data-video-src="branding">
+                                    <div  class="hero-inner-link-item" data-video-src="branding">
                                         <div class="hero-inner-link-item-padding"></div>
                                         <a  class="Enlace-a"
-                                            href="/"> <span class="Enlace-span">Seguridad</span></a>
+                                            href="/"> <span data-quote="Seguridad" class="Enlace-span">Seguridad</span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="Scroll next">
-                    <!-- Scroll -->
-                    <svg class="spinner" width="50px" height="50px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                    <circle class="path" fill="none" stroke-width="1" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-                </svg>
 
+                 <div class="Scroll next">
+                    <!-- Scroll -->
+                        <svg class="spinner" width="50px" height="50px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="path" fill="none" stroke-width="1" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+                        </svg>                    
                 <svg class="spinner-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
                     <path fill="#fff" fill-rule="evenodd" d="M4.52045455,17.1819 C5.33863636,18.0000818 6.48409091,18.0000818 7.30227273,17.1819 L11.6386364,12.8455364 C11.8840909,12.6000818 11.8840909,12.1909909 11.6386364,11.9455364 C11.3931818,11.7000818 10.9840909,11.7000818 10.7386364,11.9455364 L6.56590909,16.1182636 L6.56590909,0.654627273 C6.56590909,0.245536364 6.32045455,8.18181818e-05 5.91136364,8.18181818e-05 C5.50227273,8.18181818e-05 5.25681818,0.409172727 5.25681818,0.654627273 L5.25681818,16.0364455 L1.16590909,11.9455364 C1.08409091,11.7819 0.838636364,11.7819 0.675,11.7819 C0.511363636,11.7819 0.265909091,11.8637182 0.184090909,11.9455364 C-0.0613636364,12.1909909 -0.0613636364,12.6000818 0.184090909,12.8455364 L4.52045455,17.1819 Z"></path>
                 </svg>
@@ -130,6 +135,7 @@
                     <!-- Scroll -->
 
                 </div>
+               
 
 
                 <svg class="iconos hero-design" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +252,7 @@
                         </style>
                     </defs>
                     <title>MT</title>
-                    <rect id="Rectangulo_fuego" class="cls-1 cuadrado-anim" x="237.5" y="0.5" width="61" height="61"
+                    <rect  id="Rectangulo_fuego" class="cls-1 cuadrado-anim" x="237.5" y="0.5" width="61" height="61"
                         rx="8.52" ry="8.52" />
                     <g id="Fuego" class="cuadrado-anim">
                         <path class="cls-2"
@@ -508,15 +514,15 @@
 
 
 
-        <section data-scroll-section  class="emp transition smooth-scroll" >
+        <section id="Empresas" data-scroll-section  class="emp transition2" >
             <div class="wrapper move-up v-padding">
-                <h2>Empresas y gobiernos que confian en MTNetwoks</h2>
+                <h2 data-content="Empresas y gobiernos que confian en MTNetwoks"><span class="btn" class="is-animated">Empresas y gobiernos que confian en MTNetwoks</span></h2>
         
                 <ul class="companies">
                     <li><img src="source/Empresas/atzitzihuacan.png" alt="Logo Atzitzihuacan" class="skillshare"></li>
-                    <li><img src="source/Empresas/CALPAN.png" alt="Calpan" class="ps"></li>
+                    <li><img src="source/Empresas/CALPAN.png" alt="Calpan" class="ps image"></li>
                     <li><img src="source/Empresas/escudocoronango.png" alt="Logo Coronango" class="skillshare"></li>
-                    <li><img src="source/Empresas/IXCAMILPA.png" alt="Logo Ixcamilpa" class="ps skillshare"></li>
+                    <li><img src="source/Empresas/IXCAMILPA.png" alt="Logo Ixcamilpa" class="ps skillshare "></li>
 
                 </ul>
                 <ul class="companies">
@@ -531,11 +537,11 @@
 
 
 
-        <section data-scroll-section  class="featured smooth-scroll">
+        <section data-scroll-section data-scroll-repeat class="featured transition2">
             <div class="left" style="--x: 0; --y:0" >
-                <div class="inner transition">
+                <div class="inner">
                     <p data-scroll class="subtitle" >Bienvenidos</p>
-                    <a data-scroll href="">Construya su futuro</a>
+                    <a class="btn" data-scroll href="">Construya su futuro</a>
                     <p data-scroll class="featured-desc1">MT NETWORKS S.R.L DE C.V es una empresa de alto nivel en
                         Izúcar de
                         Matamoros.
@@ -547,16 +553,17 @@
                 </div>
             </div>
             <div class="js-scaleEl ini1">
-                <img data-scroll class="right transition2 js-scaleImageEl z-out" src="source/inicio1.jpg"
+                <img data-scroll class="right transition2 image" src="source/inicio1.jpg"
                     alt="Instalación de torres">
             </div>
         </section>
 
 
-        <section data-scroll-section  class="servicios">
+        <section data-scroll-section data-scroll-repeat class="servicios">
             <div class="container-servicios">
                 <ul>
-                    <li id="card" class="transition2 ">
+                    
+                    <li id="card" class="transition2 btn">
                         <div class="icon-container one">
 
 
@@ -571,7 +578,7 @@
                             al usuario que disponga de un dispositivo con conexión WIFI a tener acceso a Internet.</p>
                     </li>
 
-                    <li class="transition2">
+                    <li class="transition2 btn">
                         <div class="icon-container two"><img src="source/Radio.svg" alt="Icono internet"></div>
 
                         <p class="titulo-servicio">Radio Comunicaciones</p>
@@ -581,10 +588,10 @@
                             corrupti
                             quam eligendi ullam, sequi amet hic nobis, ratione quod iusto vel tempora?</p>
                     </li>
-                    <li class="transition2">
+                    <li class="transition2 btn">
                         <div class="icon-container three"><img src="source/Antena.svg" alt="Icono internet"></div>
 
-                        <p class="titulo-servicio">Enlaces de microondas</p>
+                        <p class="titulo-servicio ">Enlaces de microondas</p>
                         <p class="featured-desc desc-servicio">Lorem ipsum dolor, sit amet consectetur adipisicing
                             elit.
                             Officia consequatur provident recusandae doloremque saepe molestiae facere, veritatis
@@ -596,7 +603,7 @@
 
         </section>
 
-        <section data-scroll-section  class="porfolio">
+        <section data-scroll-section data-scroll-repeat  class="porfolio">
             <h2 >Nuestros trabajos</h2>
 
             <div class="porfolio-container transition3">
@@ -644,7 +651,7 @@
                 </div>
 
 
-                <div data-scroll-section class="swiper-container carrusel">
+                <div class="swiper-container carrusel">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="source/Cableado2.JPG" alt="">
@@ -692,7 +699,7 @@
             </div>
         </section>
 
-        <div data-scroll-section  class="hero-elegirnos">
+        <div data-scroll-section data-scroll-repeat class="hero-elegirnos">
             <div class="content" style="z-index: 4;">
                 <div class="stagger1" style="z-index: 4;">
                     <h1>¿Por qué elegir MTNetwoks?</h1>
@@ -1233,7 +1240,7 @@
             </svg>
         </div>
 
-        <div data-scroll-section="" class="swiper-container carrusel2">
+        <div data-scroll-section class="swiper-container carrusel2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <video src="source/video/facebook1.mp4" autoplay muted loop></video>
@@ -1297,14 +1304,91 @@
         </div>
 
 
-        
+        <div data-scroll-section class="historia">
+            <div class="herohis">
+              <div data-scroll data-scroll-speed="3" class="copy">
+                <blockquote class="btn">
+                    <h1 >Nuestra historia</h1>
+                    Desde el año 2015, <span>MT NETWORKS S.R.L DE C.V</span> ha ayudado
+                     a clientes en toda la Mixteca Poblana mediante
+                      una gama de <span>servicios a la media</span>
+
+                  <cite>
+                    — 1/3
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="image-wrapper">
+                  <img class="image" src="source/historia1.jpg" alt="Torre arriostrada MTNetwoks">
+                </div>
+            </div>
+            
+            <div class="section-0" data-scroll data-scroll-speed="2">
+                <p 
+                    data-scroll 
+                    data-scroll-direction="horizontal" 
+                    data-scroll-speed="-2"
+                >
+                Internet donde nadie más llega.
+                </p>
+                <p 
+                    data-scroll 
+                    data-scroll-direction="horizontal" 
+                    data-scroll-speed="2"
+                >
+                Servicios donde nadie más llega.
+                </p>
+                
+            </div>
+    
+            <div class="section-1">
+                <div class="image-mask"></div>
+            </div>
+            
+            <div class="section-2">
+              <div id="pinSection" class="pinned-quote">
+                <blockquote data-scroll data-scroll-sticky data-scroll-target="#pinSection">
+                    Tras años en la industria hemos ampliado nuestra oferta para garantizar a nuestros clientes siempre
+                    la mejor experiencia.                    
+                    
+                    <cite>2/3</cite>
+                </blockquote>
+              </div>
+              
+              <div class="images-container">
+                  <img src="source/Instalacion.jpg" alt="">
+                  <img src="source/CCTVMOVIL5.jpg" alt="">
+                  <img src="source/Radios.jpg" alt="">
+                  <img src="source/torres.jpg" alt="">
+                  <img src="source/CCTV.jpg" alt="">
+                  <img src="source/fichashis.jpg" alt="">
+                  <img src="source/Fibra2.jpg" alt="">
+                  <img src="source/panelSolar.jpg" alt="">
+              </div>
+            </div>
+            
+            <div class="section-3">
+              <div class="image-wrapper">
+                <img  src="source/inicioHistoria.jpg" alt="">
+              </div>
+              <div class="copy">
+                <blockquote data-scroll-speed="3" data-scroll>
+                    Este éxito nos ha permitido llegar a otras latitudes y en cada una fortalecer nuestra reputación.
+                    Nuestra ventaja radica en el empeño que ponemos en desarrollar relaciones y obtener conocimientos de
+                    fuentes reconocidas en la industria. Póngase en contacto y conozca más.
+                    <cite>3/3</cite> 
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
         <div data-scroll-section  class="contenedorEmpresas">
             <div class="faders">
                 <div class="left"></div>
                 <div class="right"></div>
             </div>
-    
-            <div class="items">
+            <h2 class="btn">Integradores Certificados en:</h2>
+            <div class="items btn">
                 <div class="entry">
                     <p class="name"></p>
                     <img src="source/certificaciones/cambium.jpg" alt="Smiling chick">
@@ -1347,9 +1431,17 @@
                 </div>
             </div>
         </div>
+
+        <!-- #mapa cobertura test -->
+        <div data-scroll-section >
+            <h2>Cobertura de Internet</h2>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1a7_xahgwf8R3vTQWmN1XguE1sCbyFz3j" class="frame"></iframe>
+        </div>
+        <!-- #mapa cobertura  -->
 <!-- #region pricin-->
 
 <section  data-scroll-section  class="grid-container price-tables transition3">
+    <h2>Paquetes de Internet</h2>
     <div class="grid-x grid-margin-x grid-margin-y">
         <div class="cell large-3 medium-12 small-12">
             <div class="pricing-table">
@@ -1367,9 +1459,9 @@
                 <div class="pricing-content">
                     <ul>
                         <li class="bullet-item"><i class="fa fa-check available"><img src="source/icono.svg"
-                                    style="width: 5%;" alt="Icono de check"></i>Hasta 5 Megas</li>
+                                     alt="Icono de check"></i>Hasta 5 Megas</li>
                         <li class="bullet-item">
-                            <i class="fa fa-check available"><img src="source/icono.svg" style="width: 5%;"
+                            <i class="fa fa-check available"><img src="source/icono.svg" 
                                     alt="Icono de check"></i>Instalación $500
                         </li>
                         <li class="bullet-item">
@@ -1377,8 +1469,7 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="clear button button--free"><a href="#modal1">Enviar
-                        solicitud</a></button>
+                <button type="button" class="clear button button--free"><a href="#modal1">Contratar</a></button>
             </div>
         </div>
 
@@ -1398,14 +1489,14 @@
                 <div class="pricing-content-plus">
                     <ul>
                         <li class="bullet-item"><i class="fa fa-check "><img src="source/icono.svg"
-                                    style="width: 5%;" alt="Icono de check"></i> Hasta 5 megas <a href="#"
+                                     alt="Icono de check"></i> Hasta 5 megas <a href="#"
                                 class="pricingh-basic">Basic</a>
                         <li class="bullet-item"><i class="fa fa-check available"><img src="source/icono.svg"
-                                    style="width: 5%;" alt="Icono de check"></i>Instalación $2,810</li>
+                                     alt="Icono de check"></i>Instalación $2,810</li>
                         <i class="fa fa-check available">*Aplican restricciones </i>
 
                     </ul>
-                    <button type="button" class="button button--plus">Enviar solicitud</button>
+                    <button type="button" class="button button--plus">Contratar</button>
                 </div>
             </div>
         </div>
@@ -1425,10 +1516,10 @@
                 <div class="pricing-content-premium">
                     <ul>
                         <li class="bullet-item"><i class="fa fa-check available"><img src="source/icono.svg"
-                                    style="width: 5%;" alt="Icono de check"> </i>Instalación $5,000.00</li>
+                                     alt="Icono de check"> </i>Instalación $5,000.00</li>
                         <i class="fa fa-check available">*Aplican restricciones </i>
                     </ul>
-                    <button type="button" class="button button--premium">Enviar solicitud</button>
+                    <button type="button" class="button button--premium">Contratar</button>
                 </div>
             </div>
         </div>
@@ -1449,12 +1540,12 @@
                 <div class="pricing-content-premium">
                     <ul>
                         <li class="bullet-item"><i class="fa fa-check available"><img src="source/icono.svg"
-                                    style="width: 5%;" alt="Icono de check"></i>Instalación $5,000.00</li>
+                                     alt="Icono de check"></i>Instalación $5,000.00</li>
                         <li class="bullet-item"><i class="fa fa-check available"><img src="source/icono.svg"
-                                    style="width: 5%;" alt="Icono de check"></i>5 Megas dedicados</li>
+                                     alt="Icono de check"></i>5 Megas dedicados</li>
                         <i class="fa fa-check available">*Aplican restricciones </i>
                     </ul>
-                    <button type="button" class="button button--premium">Enviar solicitud</button>
+                    <button type="button" class="button button--premium">Contratar</button>
                 </div>
             </div>
         </div>
@@ -1478,10 +1569,10 @@
                 </div>
                 <div class="footer-links" id="footer">
                     <ul>
-                        <li><a href="#modal" alt="">Servicios</a></li>
-                        <li><a href="#" alt="">Internet</a></li>
-                        <li><a href="#" alt="">Comprar</a></li>
-                        <li><a href="#" alt="">Nosotros</a></li>
+                        <li><a class="btn" href="#modal" alt="">Servicios</a></li>
+                        <li><a class="btn" href="#" alt="">Internet</a></li>
+                        <li><a class="btn" href="#" alt="">Comprar</a></li>
+                        <li><a class="btn" href="#" alt="">Nosotros</a></li>
                     </ul>
                 </div>
             </div>
@@ -1518,7 +1609,7 @@
                         <button href="javascript:;"
                             onclick="realizaProceso($('#nombre').val(), $('#correo').val(), $('#telefono').val(), $('#asunto').val());return false;"
                             id="btn1" type="submit" name="submitForm"><i
-                                class="fa fa-envelope"></i>&nbsp;Enviar</button>
+                                class="fa fa-envelope btn"></i>&nbsp;Enviar</button>
                     </form>
                 </div>
             </div>
@@ -1537,15 +1628,15 @@
             </div>
         </div>   
         <div class="ending-note">
-            <p>This website and its contents are protected by international laws of copyright<strong>©</strong>.
-                Reproduction of form or content must be previously approved. Please contact us.</p>
+            <p><strong>©</strong>2020 por MT NETWORKS S.R.L DE C.V. 
+                <a href="#modal">Legal</a></p>
         </div> 
     </div>
 
 
         <div id="modal" class="modaloverlay">
             <div id="modal" class="modal">
-                <a href="#close" class="close">&times;</a>
+                <a href="#close" class="clos">&times;</a>
                 <div>
                     <h1>MT NETWORKS, S. DE R.L. DE C.V.,</h1>
                     <p>Es titular de una concesión única para uso comercial con folio de inscripción en el
@@ -1583,66 +1674,50 @@
 
 
         <div id="modal1" class="modaloverlay">
-            <div id="modal" class="modal">
-                <a href="#close" class="close">&times;</a>
+            <div id="modal row main" class="modal">
+                <a href="#close" class="clos">&times;</a>
                 <div>
-                    <h4>MT NETWORKS, S. DE R.L. DE C.V.,</h4>
-
+                    <div class="col">
+                        <div class="contactform">
+                            <p>Complete el formulario &nbsp;de solicitud &nbsp;de internet</p>
+                            <form id="form" action="footer.php" method="post">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                                <label for="yourbox">Correo</label>
+                                <input type="text" name="correo" id="correo" placeholder="su@coreo.com">
+                                <label for="yourbox">Teléfono</label>
+                                <input type="text" name="telefono" id="telefono" placeholder="000 000 0000">
+                                <label for="message">Mensaje</label>
+                                <textarea type="text" name="asunto" id="asunto"></textarea>
+                                <div class="robot"></div>
+                                <div class="g-recaptcha" data-sitekey="6Le4hDEaAAAAAIZtJ1WCeRjZceQbcMhfJUV-1yvr"></div>
+                                <button onclick="findMe()">Mostrar ubicación</button>
+                                <div id="map"></div>
+                            
+                                <button href="javascript:;"
+                                    onclick="realizaProceso($('#nombre').val(), $('#correo').val(), $('#telefono').val(), $('#asunto').val());return false;"
+                                    id="btn1" type="submit" name="submitForm"><i
+                                        class="fa fa-envelope btn"></i>&nbsp;Enviar</button>
+                            </form>
+                        </div> 
+                    </div>                                       
                 </div>
             </div>
         </div>
 
 
     </main>
-    <script>
-   
-
-        function realizaProceso(nombre, correo, telefono, mensaje) {
-            var parametros = {
-                "nombre": nombre,
-                "correo": correo,
-                "telefono": telefono,
-                "mensaje": mensaje
-            };
-            var timeDelay = 8000;           // MILLISECONDS (5 SECONDS).
-        
-            $.ajax({
-                data: parametros, //datos que se envian a traves de ajax
-                url: 'footer.php', //archivo que recibe la peticion
-                type: 'post', //método de envio
-                beforeSend: function () {
-                    $(".robot").html("Procesando, espere por favor...");   
-                    setTimeout(timeDelay);                                     
-                },
-                success: function (
-                response) { //una vez que el archivo recibe el request lo procesa y lo devuelve
-                    $(".robot").html(response);
-                    
-                    $("#btn1").val("Enviado");
-                    $('#nombre').val("");
-                    $('#correo').val("");
-                    $('#telefono').val("");
-                    $('#asunto').val("");
-                    grecaptcha.reset();
-                },
-                error: function (e) {
-                    alert("ATENCION!\nEl sistema agoto el tiempo de espera!\n" +
-                        "- Por favor, verifique su internet o intentelo de nuevo! ");
-
-                }
-            });
-        }
-    </script>
 
 </body>
 
 <div class="cursor">
-    <div class="cursor-media media-blend">
+    <div class="cursor-media">
         <video src="source/video/hero4.mp4" preload="auto" autoplay muted loop id="websites"></video>
-        <video src="source/video/hero3.mp4" preload="auto" autoplay muted loop id="apps"></video>
+        <video src="source/video/hero3xa.mp4" preload="auto" autoplay muted loop id="apps"></video>
         <video src="source/video/seguridad.mp4" preload="auto" autoplay muted loop id="branding"></video>
     </div>
 </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJo6XbURZhtH5g48k4Y9LjD4EafqpqTlY"></script>
 
 <script type="module" src="js/Cursor.js"></script>
 <!-- # utils-->
@@ -1685,5 +1760,76 @@
 
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 <script src="js/helper.js"></script>
+<script>
+	function findMe(){
+			var output = document.getElementById('map');
+
+			// Verificar si soporta geolocalizacion
+			if (navigator.geolocation) {
+				output.innerHTML = "<p>Tu navegador soporta Geolocalizacion</p>";
+			}else{
+				output.innerHTML = "<p>Tu navegador no soporta Geolocalizacion</p>";
+			}
+
+			//Obtenemos latitud y longitud
+			function localizacion(posicion){
+
+				var latitude = posicion.coords.latitude;
+				var longitude = posicion.coords.longitude;
+
+				var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=600x300&markers=color:red%7C"+latitude+","+longitude+"&key=AIzaSyDJo6XbURZhtH5g48k4Y9LjD4EafqpqTlY";
+
+				output.innerHTML ="<img src='"+imgURL+"'>";
+
+				
+
+			}
+
+			function error(){
+				output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";
+
+			}
+
+			navigator.geolocation.getCurrentPosition(localizacion,error);
+
+		}
+
+        function realizaProceso(nombre, correo, telefono, mensaje) {
+            var parametros = {
+                "nombre": nombre,
+                "correo": correo,
+                "telefono": telefono,
+                "mensaje": mensaje
+            };
+            var timeDelay = 8000;           // MILLISECONDS (5 SECONDS).
+        
+            $.ajax({
+                data: parametros, //datos que se envian a traves de ajax
+                url: 'footer.php', //archivo que recibe la peticion
+                type: 'post', //método de envio
+                beforeSend: function () {
+                    $(".robot").html("Procesando, espere por favor...");   
+                    setTimeout(timeDelay);                                     
+                },
+                success: function (
+                response) { //una vez que el archivo recibe el request lo procesa y lo devuelve
+                    $(".robot").html(response);
+                    
+                    $("#btn1").val("Enviado");
+                    $('#nombre').val("");
+                    $('#correo').val("");
+                    $('#telefono').val("");
+                    $('#asunto').val("");
+                    grecaptcha.reset();
+                },
+                error: function (e) {
+                    alert("ATENCION!\nEl sistema agoto el tiempo de espera!\n" +
+                        "- Por favor, verifique su internet o intentelo de nuevo! ");
+
+                }
+            });
+        }
+   
+    </script>
 
 </html>

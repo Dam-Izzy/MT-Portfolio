@@ -1,7 +1,7 @@
-// Linear interpolation
+// interpolación lineal
 const lerp = (a, b, n) => (1 - n) * a + n * b;
 
-// Gets the mouse position
+// Obtiene la posicion del mouse
 const getMousePos = (e) => {
   let posx = 0;
   let posy = 0;
@@ -12,17 +12,17 @@ const getMousePos = (e) => {
   }
   return { x: posx, y: posy };
 };
-// Get sibilings
+// obtener hermanos
 const getSiblings = (e) => {
-  // for collecting siblings
+  // colleccion de hermanos
   let siblings = [];
-  // if no parent, return no sibling
+  // Si no es pareja, retornar sin hermanos
   if (!e.parentNode) {
     return siblings;
   }
-  // first child of the parent node
+  // primer hijo del un nodo de padres
   let sibling = e.parentNode.firstChild;
-  // collecting siblings
+  // almacenar hermanos
   while (sibling) {
     if (sibling.nodeType === 1 && sibling !== e) {
       siblings.push(sibling);
